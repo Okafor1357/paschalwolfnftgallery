@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Wolf NFT Gallery</title>
+    <!-- created by Paschal(Bizzy-P) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+           
+        }
+        main{
+            background-image: url('image/wolf collection 8.png'); /* Fixed the background image path */
+              background-position: center; 
+           background-size: cover;
+           background-repeat: no-repeat;
+           width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 15px;
+            background-color: #031b4a;
+            color: white;
+        }
+
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .nft-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+        }
+
+        .nft-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 300px; /* Increased the maximum width */
+        }
+
+        .nft-item p {
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* New styles for the image section */
+        #image-section {
+            text-align: center;
+            padding: 20px 20px;
+            background-color: #e8eef7;
+        }
+
+        #image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Media query for phones */
+        @media (max-width: 600px) {
+            .nft-item {
+                width: calc(30% - 10px); /* Two items per row with a gap */
+            }
+        }
+
+        .nft-item button {
+            background-color: #4CAF50; /* Green color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .nft-item button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        footer{
+            text-align: center;
+            padding: 15px;
+            background-color: #031b4a;
+            color: white;
+            font-size: 14px;
+        }
+
+        .social-icons {
+            text-align: center;
+            padding: 20px;
+            background-color: #c7cfde;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #4CAF50;
+        }
+
+        .social-icons i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the NFT Gallery</h1>
+    </header>
+    <main>
+
+        <section id="welcome-section" style="text-align: center; padding: 20px; background-color: #f0f8ff;">
+            <h2> Wolf NFT Collection</h2>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 16px; line-height: 1.6;">
+                Step into the world of the Wolf NFT Collection, where art meets innovation. Our gallery showcases a unique blend of creativity and blockchain technology, offering you the chance to own exclusive digital assets. Each NFT in this collection tells a story, capturing the essence of the wild and the spirit of the wolf. Explore, collect, and be part of this extraordinary journey.
+            </p>
+        </section>
+
+        <!-- New Image Section -->
+        <section id="image-section">
+            <h2>Featured NFT</h2>
+            <img src="image/wolf collection gallery.png" alt="Featured NFT">
+            <p style="max-width: 800px; margin: 20px auto; font-size: 16px; line-height: 1.6; text-align: center;">
+                This is our featured NFT of the month. It represents a unique piece of digital art that showcases creativity and innovation. 
+                Explore its details and own a one-of-a-kind digital asset today!
+            </p>
+        </section>
+
+        <!-- About NFTs Section -->
+        <section id="about-nfts" style="text-align: center; padding: 20px; background-color: #f9f9f9;">
+            <h2>What are NFTs?</h2>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 16px; line-height: 1.6;">
+                NFTs (Non-Fungible Tokens) are unique digital assets that represent ownership of a specific item or piece of content, such as art, music, videos, or collectibles. 
+                Unlike cryptocurrencies like Bitcoin, NFTs are one-of-a-kind and cannot be exchanged on a one-to-one basis. 
+                They are stored on blockchain technology, ensuring their authenticity and ownership.
+            </p>
+        </section>
+
+       
+
+        <section id="gallery">
+            <!-- NFT items -->
+            <div class="nft-item">
+                <img src="image/wolf collection 1.png" alt="NFT 1">
+                <p>
+                    NFT Title 1
+                    <br>
+                    <a href="https://example.com/nft1" target="_blank">View Details</a>
+                    <br>
+                    <button onclick="window.location.href='https://example.com/buy-nft1'">Buy</button>
+                </p>
+            </div>
+            <div class="nft-item">
+                <img src="image/wolf collection 2.png" alt="NFT 2">
+                <p>
+                    NFT Title 2
+                    <br>
+                    <a href="https://example.com/nft2" target="_blank">View Details</a>
+                    <br>
+                    <button onclick="window.location.href='https://example.com/buy-nft2'">Buy</button>
+                </p>
+            </div>
+            <div class="nft-item">
+                <img src="image/wolf collection 3.png" alt="NFT 3">
+                <p>
+                    NFT Title 3
+                    <br>
+                    <a href="https://example.com/nft3" target="_blank">View Details</a>
+                    <br>
+                    <button onclick="window.location.href='https://example.com/buy-nft3'">Buy</button>
+                </p>
+            </div>
+            <div class="nft-item">
+                <img src="image/wolf collection 4.png" alt="NFT 4">
+                <p>
+                    NFT Title 4
+                    <br>
+                    <a href="https://example.com/nft4" target="_blank">View Details</a>
+                    <br>
+                    <button onclick="window.location.href='https://example.com/buy-nft4'">Buy</button>
+                </p>
+            </div>
+            <div class="nft-item">
+                <img src="image/wolf collection 5.png" alt="NFT 5">
+                <p>
+                    NFT Title 5
+                    <br>
+                    <a href="https://example.com/nft5" target="_blank">View Details</a>
+                    <br>
+                    <button onclick="window.location.href='https://example.com/buy-nft5'">Buy</button>
+                </p>
+            </div>
+            <div class="nft-item">
+                <img src="image/wolf collection 6.png" alt="NFT 6">
+                <p>
+                    NFT Title 6
+                    <br>
+                    <a href="https://example.com/nft6" target="_blank">View Details</a>
+                    <br>
+                    <button onclick="window.location.href='https://example.com/buy-nft6'">Buy</button>
+                </p>
+            </div>
+            <div class="nft-item">
+                <img src="image/wolf collection 7.png" alt="NFT 7">
+                <p>
+                    NFT Title 7
+                    <br>
+                    <a href="https://example.com/nft7" target="_blank">View Details</a>
+                    <br>
+                    <button onclick="window.location.href='https://example.com/buy-nft7'">Buy</button>
+                </p>
+            </div>
+            <div class="nft-item">
+                <img src="image/wolf collection 8.png" alt="NFT 8">
+                <p>
+                    NFT Title 8
+                    <br>
+                    <a href="https://example.com/nft8" target="_blank">View Details</a>
+                    <br>
+                    <button onclick="window.location.href='https://example.com/buy-nft8'">Buy</button>
+                </p>
+            </div>
+            <div class="nft-item">
+                <img src="image/wolf collection gallery.png" alt="Additional Image">
+                <p>
+                    Additional NFT Coming soon!
+                </p>
+            </div>
+        </section>
+
+         <!-- About Wolves Section -->
+         <section id="wolf-section" style="text-align: center; padding: 20px; background-color: #f5f5f5;">
+            <h2>About Wolves</h2>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 16px; line-height: 1.6;">
+                Wolves are majestic creatures known for their intelligence, social structure, and adaptability. As apex predators, they play a crucial role in maintaining the balance of ecosystems. Wolves are also symbols of loyalty, freedom, and the wild spirit. Their pack dynamics and communication skills are a testament to their complex and fascinating nature. Through the Wolf NFT Collection, we aim to capture the essence of these incredible animals and bring their stories to life in the digital realm.
+            </p>
+        </section>
+
+    
+    </main>
+    <section class="social-icons">
+            
+        <a href="https://www.twitter.com/@PaschalBizzy" target="_blank"
+            style="margin: 0 10px; color: #1DA1F2; font-size: 24px;">
+            <i class="fa fa-twitter"></i> <!-- Twitter Icon -->
+        </a>
+        <a href="https://wa.me/2348109867987" target="_blank" style="margin: 0 10px; color: #25D366; font-size: 24px;">
+            <i class="fa fa-whatsapp"></i> <!-- WhatsApp Icon -->
+        </a>
+        
+        <a href="https://t.me/Paschal099" target="_blank" style="margin: 0 10px; color: #0088cc; font-size: 24px;">
+            <i class="fa fa-telegram"></i> <!-- Telegram Icon -->
+        </a>
+        </section>
+    
+</section>
+    <footer style="text-align: center; padding: 20px; background-color: #031b4a; color: white;">
+        <p>&copy; 2025 Wolf NFT Collection. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:paschalokafor660@gmail.com" style="color: #4CAF50;">paschalokafor660@gmail.com</a></p>
+        <div style="margin-top: 10px;">
+            <a href="https://facebook.com" target="_blank" style="margin: 0 10px; color: white; text-decoration: none;">
+                <img src="image NFT/facebook-icon.png" alt="Facebook" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://twitter.com" target="_blank" style="margin: 0 10px; color: white; text-decoration: none;">
+                <img src="image NFT/twitter-icon.png" alt="Twitter" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://instagram.com" target="_blank" style="margin: 0 10px; color: white; text-decoration: none;">
+                <img src="image NFT/instagram-icon.png" alt="Instagram" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </footer>
+    <script src="javaScript/nftGallery.js"></script>
+</body>
+</html>
